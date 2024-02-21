@@ -1,0 +1,2 @@
+# Funcionamiento
+Como la creacion de los pdfs se hace de forma asincronica no puedo hacer una step function express. Entonces tengo que tener un endpoint (POST) para enviar la informacion que necesita la step function y despues otro endpoint (GET) que periodicamente pregunte si ya se termino de ejecutar y que obtenga el resultado.
