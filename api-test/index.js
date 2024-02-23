@@ -9,13 +9,13 @@ const jsonGigante =
     "body": {
       "modulo": "sueldo_recibo",
       "template": "sueldo-recibo.html",
-      "landscape": true, //apaisa y duplica el sueldo
+      "landscape": false, //apaisa y duplica el sueldo
       "idcomprobante": "290678996",
       "output": "pdf",
       "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpZHVzdWFyaW8iOjI2OCwiaWRjdWl0Ijo5MDE3MX0.c158RBLCKXUIPsy0BMVZiuuYGobyXp6aObCzXo_Lk1QLBFwh24pSbrXluWha2c7wSVZ5pSgv6YFuL4tnvRhDzg",
       "metadata": [
         {
-          "merge": true,
+          "merge": false,
           "criterio_orden": "0",
           "employer": {
             "Cuit": "30717881762",
@@ -348,6 +348,11 @@ const jsonGigante =
           console.error('Error al analizar JSON de describeExecution:', error);
         }
   
+        if (status == "FAILED"){
+          console.error("El proceso ha fallado")
+          return
+        }
+
         if (status !== 'SUCCEEDED') {
           setTimeout(() => pollExecution(intentos - 1), 10000);
         } else {
