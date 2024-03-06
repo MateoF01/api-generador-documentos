@@ -3,9 +3,9 @@
     "template": "sueldo-recibo.html",
     "modulo": "sueldo_recibo",
     "output": "pdf",
-    "landscape": false,
+    "landscape": true,
     "criterio_orden": "0",
-    "merge": false,
+    "merge": true,
     "requestContext": { "routeKey": "sendRequest" }
   },
   "employer": {
