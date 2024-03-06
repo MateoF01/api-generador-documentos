@@ -5,7 +5,7 @@
       "output": "pdf",
       "landscape": false,
       "criterio_orden": "0",
-      "merge": false,
+      "merge": true,
       "requestContext": { "routeKey": "sendRequest" }
     },
     "employer": {
