@@ -6,7 +6,7 @@ Para comenzar, el usuario debe clonar el repositorio alojado [aqui](https://gith
 
 El archivo JSON deberá contener esta estructura, en el que cada elemento del array ``"employee"`` refleja un recibo de sueldo adicional (en este ejemplo se proporcionan dos empleados): 
 
-```Json
+```json
 {
   "body": {
     "template": "sueldo-recibo.html",
@@ -261,7 +261,7 @@ El recorrido que hace la aplicación, desde la llamada a la API, hasta el retorn
 ##### State-Machine
 La máquina de estados es la encargada de orquestrar la generación de los recibos en paralelo, y decidir si al final se juntarán en un solo PDF o se guardarán por separado (mediante el valor `merge: true` del JSON ).
 
-![[State-Machine.png]]
+!(State-Machine.png)
 Estructura de la State-Machine.
 
 - **EmplyeeMap:** Este componente facilita la paralelización de todas las generaciones. Gracias a esto, el sistema mantiene una complejidad de O(Log(n)), lo que significa que imprimir 10 o 100 recibos tiene casi el mismo costo computacional.
