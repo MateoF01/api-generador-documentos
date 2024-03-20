@@ -1,17 +1,17 @@
 const { exec } = require('child_process');
 
-function generarDocumentos(inputJson) {
-  const fechaActual = new Date();
-  const fechaFormateada = `${fechaActual.getDate()}-${fechaActual.getMonth() + 1}-${fechaActual.getFullYear()}-${fechaActual.getHours()}hs-${fechaActual.getMinutes()}min`;
+function generarDocumentos(metadata, bucketName, keyName) {
 
-  inputJson.body.fecha = fechaFormateada;
-
-  inputJson.body.rutaCarpeta = `${inputJson.employer.Cuit}/${fechaFormateada}`;
-
-  const jsonString = JSON.stringify(inputJson);
+  input = {
+    body: metadata.body,
+    employer: metadata.employer,
+    bucketName,
+    keyName
+  }
+  const inputString = JSON.stringify(input);
 
   const inputObject = {
-    input: jsonString,
+    input: inputString,
     stateMachineArn: "arn:aws:states:sa-east-1:458224645011:stateMachine:orquestador-generador-documentos"
   };
 
@@ -74,7 +74,7 @@ function generarDocumentos(inputJson) {
       });
     };
 
-    pollExecution(12);  // Número máximo de intentos permitidos (2 minutos running)
+    pollExecution(36);  // Número máximo de intentos permitidos (6 minutos running)
   });
 }
 

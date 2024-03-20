@@ -3,15 +3,19 @@
     "template": "sueldo-recibo.html",
     "modulo": "sueldo_recibo",
     "output": "pdf",
-    "landscape": true,
+    "landscape": false,
     "criterio_orden": "0",
-    "merge": true,
-    "requestContext": { "routeKey": "sendRequest" }
+    "merge": false,
+    "requestContext": {
+      "routeKey": "sendRequest"
+    },
+    "fecha": "18-3-2024-12hs-4min",
+    "rutaCarpeta": "30743876418/18-3-2024-12hs-4min"
   },
   "employer": {
-      "Cuit": "30743876418",
-      "Name": "GOBIERNO DE ESPANIA",
-      "Data": "todo lo que devuelve el servicio https://soft.sos-contador.com/apiv2/cuit/parametros"
+    "Cuit": "30743876418",
+    "Name": "GOBIERNO DE ESPANIA",
+    "Data": "todo lo que devuelve el servicio https://soft.sos-contador.com/apiv2/cuit/parametros"
   },
   "employee": [
     {
@@ -230,6 +234,3 @@
     }
   ]
 }
-
-
-
