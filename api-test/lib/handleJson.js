@@ -1,11 +1,9 @@
 require('dotenv').config();
-
-const {v4} = require('uuid')
 const fs = require('fs');
 const AWS = require('aws-sdk');
 
 
-function handleJson(filePath, jsonKey) {
+async function handleJson(filePath, jsonKey) {
 
     const jsonData = fs.readFileSync(filePath);
     const inputJson = JSON.parse(jsonData);
@@ -19,7 +17,7 @@ function handleJson(filePath, jsonKey) {
     const jsonEmployee = inputJson.employee
     fs.writeFileSync("jsonParaSubir.json", JSON.stringify(jsonEmployee, null, 2));
 
-    uploadToS3("jsonParaSubir.json", process.env.AWS_S3_SUELDOS_BUCKET, jsonKey)
+    await uploadToS3("jsonParaSubir.json", process.env.AWS_S3_SUELDOS_BUCKET, jsonKey)
 
     console.log('Campos agregados correctamente al archivo JSON.');
 
