@@ -16,7 +16,7 @@ function activarStepFunction(url, archivoJSON) {
 
 const urlDestino = 'https://18vlt0z8c8.execute-api.sa-east-1.amazonaws.com/dev/handleJson'
 
-const archivoJSONGrande = '../samples/data.json';
+const archivoJSONGrande = '../samples/dataMediana.json';
 
 activarStepFunction(urlDestino, archivoJSONGrande);
 
