@@ -20,7 +20,7 @@ console.log("El json se guardará en: ", jsonKey);
 
 const s3 = new AWS.S3();
 
-const archivoJSON = 'samples/dataMediana.json';
+const archivoJSON = 'samples/factura.json';
 const fileContent = fs.readFileSync(archivoJSON);
 
 const paramsUploadJson = {
