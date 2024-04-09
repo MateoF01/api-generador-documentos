@@ -12,239 +12,239 @@ El archivo JSON deberá contener esta estructura, en el que cada elemento del ar
 
 ```json
 {
-  "body": {
-    "template": "sueldo-recibo.html",
-    "modulo": "sueldo_recibo",
-    "output": "pdf",
-    "callbackUrl": "tu_url",
-    "landscape": true,
-    "criterio_orden": "0",
-    "merge": true,
-    "requestContext": { "routeKey": "sendRequest" }
-  },
-  "employer": {
-      "Cuit": "30743844418",
-      "Name": "USINA Digital",
-      "Data": "Datos como el CP y el domiciolo"
-  },
-  "employee": [
-    {
-      "EmployeeCuil": "0438761281",
-      "NameLastName": "MURSELI, AGUSTIN",
-      "AdmissionDate": "2023-09-10",
-      "TaskPerformed": "Desarrollo",
-      "FileNumber": "107752",
-      "Agreement": {
-        "Code": "(Codigo de convenio)",
-        "Description": "(Descripción de convenio)"
-      },
-      "Descriptors": {
-        "Branch": {
-          "Code": "(Codigo de rama)",
-          "Description": "(Descripción de rama)"
-        },
-        "Grouping": {
-          "Code": "(Codigo de agrupamiento)",
-          "Description": "(Descripción de agrupamiento)"
-        },
-        "Job": {
-          "Code": "(Codigo de puesto)",
-          "Description": "(Descripción de puesto)"
-        },
-        "Age": {
-          "Code": "(Codigo de edad)",
-          "Description": "(Descripción de edad)"
-        },
-        "WorkingDay": {
-          "Code": "(Codigo de jornada)",
-          "Description": "(Descripción de jornada)"
-        },
-        "Area": {
-          "Code": "(Codigo de zona)",
-          "Description": "(Descripción de zona)"
-        }
-      },
-      "WorkAddress": {
-        "Name": "(Nombre de la sucursal)",
-        "Address": "Dirección completa, Calle nro, piso/depto, localidad, provincia"
-      },
-      "WorkArea": {
-        "Code": "(Codigo de zona)",
-        "Name": "(Nombre del código de zona)"
-      },
-      "SettlementMethod": "2",
-      "SettlementDate": "2024-03-06",
-      "SocialWork": "Obra Social",
-      "ProfessionalCategory": "AYUDANTE",
-      "AssignedRemuneration": "(Remuneración Asignada)",
-      "DateLastDepositContributions": "2023-10",
-      "PeriodLastDepositContributions": "2023-09",
-      "TotalAmountContributions": "(Monto total de contribuciones)",
-      "TotalBasicRemuneration": "65929.50",
-      "BasicRemunerationMode": "(Si Modalidad de la liquidación del legajo es = Mes, se envía Valor mensual, SINO Valor hora)",
-      "PlacePayment": "CABA",
-      "PaymentDate": "2023-10-31",
-      "PaymentWay": "(Forma de pago)",
-      "DepositBank": "VEP",
-      "DepositAccountCBU": "(CBU de depósito)",
-      "PrintedObservations": "(Observaciones Impresas del recibo)",
-      "Concepts": [
-        {
-          "Code": "2",
-          "Description": "Horas Normales",
-          "Type": "RemunerativeConcepts",
-          "Amount": "90",
-          "Parameter": "cantidad",
-          "Value": "81900.00"
-        },
-        {
-          "Code": "201",
-          "Description": "Jubilación",
-          "Type": "DiscountConcepts",
-          "Amount": "11",
-          "Parameter": "%",
-          "Value": "9009.00"
-        },
-        {
-          "Code": "202",
-          "Description": "Ley 19032",
-          "Type": "DiscountConcepts",
-          "Amount": "3",
-          "Parameter": "%",
-          "Value": "2457.00"
-        },
-        {
-          "Code": "203",
-          "Description": "Obra Social",
-          "Type": "DiscountConcepts",
-          "Amount": "3",
-          "Parameter": "%",
-          "Value": "2457.00"
-        },
-        {
-          "Code": "206",
-          "Description": "Sindicato",
-          "Type": "DiscountConcepts",
-          "Amount": "2.5",
-          "Parameter": "%",
-          "Value": "2047.50"
-        }
-      ],
-      "NetAmount": {
-        "Amount": "65929.00",
-        "Description": "Son pesos SESENTA Y CINCO MIL NOVECIENTOS VEINTINUEVE CON 50/100"
-      }
-    },
-    {
-      "EmployeeCuil": "20434052312",
-      "NameLastName": "FERNANDEZ, JULIO MATEO",
-      "AdmissionDate": "2023-09-10",
-      "TaskPerformed": "Desarrollador",
-      "FileNumber": "107252",
-      "Agreement": {
-        "Code": "(Codigo de convenio)",
-        "Description": "(Descripción de convenio)"
-      },
-      "Descriptors": {
-        "Branch": {
-          "Code": "(Codigo de rama)",
-          "Description": "(Descripción de rama)"
-        },
-        "Grouping": {
-          "Code": "(Codigo de agrupamiento)",
-          "Description": "(Descripción de agrupamiento)"
-        },
-        "Job": {
-          "Code": "(Codigo de puesto)",
-          "Description": "(Descripción de puesto)"
-        },
-        "Age": {
-          "Code": "(Codigo de edad)",
-          "Description": "(Descripción de edad)"
-        },
-        "WorkingDay": {
-          "Code": "(Codigo de jornada)",
-          "Description": "(Descripción de jornada)"
-        },
-        "Area": {
-          "Code": "(Codigo de zona)",
-         "Description": "(Descripción de zona)"
-
-        }
-      },
-      "WorkAddress": {
-        "Name": "(Nombre de la sucursal)",
-        "Address": "Dirección completa, Calle nro, piso/depto, localidad, provincia"
-      },
-      "WorkArea": {
-        "Code": "(Codigo de zona)",
-        "Name": "(Nombre del código de zona)"
-      },
-      "SettlementMethod": "2",
-      "SettlementDate": "2024-03-06",
-      "SocialWork": "Obra Social",
-      "ProfessionalCategory": "AYUDANTE",
-      "AssignedRemuneration": "(Remuneración Asignada)",
-      "DateLastDepositContributions": "2023-10",
-      "PeriodLastDepositContributions": "2023-09",
-      "TotalAmountContributions": "(Monto total de contribuciones)",
-      "TotalBasicRemuneration": "65929.50",
-      "BasicRemunerationMode": "(Si Modalidad de la liquidación del legajo es = Mes, se envía Valor mensual, SINO Valor hora)",
-      "PlacePayment": "CABA",
-      "PaymentDate": "2023-10-31",
-      "PaymentWay": "(Forma de pago)",
-      "DepositBank": "VEP",
-      "DepositAccountCBU": "(CBU de depósito)",
-      "PrintedObservations": "(Observaciones Impresas del recibo)",
-      "Concepts": [
-        {
-          "Code": "2",
-          "Description": "Horas Normales",
-          "Type": "RemunerativeConcepts",
-          "Amount": "90",
-          "Parameter": "cantidad",
-          "Value": "81900.00"
-        },
-        {
-          "Code": "201",
-          "Description": "Jubilación",
-          "Type": "DiscountConcepts",
-          "Amount": "11",
-          "Parameter": "%",
-          "Value": "9009.00"
-        },
-        {
-          "Code": "202",
-          "Description": "Ley 19032",
-          "Type": "DiscountConcepts",
-          "Amount": "3",
-          "Parameter": "%",
-          "Value": "2457.00"
-        },
-        {
-          "Code": "203",
-          "Description": "Obra Social",
-          "Type": "DiscountConcepts",
-          "Amount": "3",
-          "Parameter": "%",
-          "Value": "2457.00"
-        },
-        {
-          "Code": "206",
-          "Description": "Sindicato",
-          "Type": "DiscountConcepts",
-          "Amount": "2.5",
-          "Parameter": "%",
-          "Value": "2047.50"
-        }
-      ],
-      "NetAmount": {
-        "Amount": "65929.00",
-        "Description": "Son pesos SESENTA Y CINCO MIL NOVECIENTOS VEINTINUEVE CON 50/100"
-      }
-    }
-  ]
+  "body": {
+    "template": "sueldo-recibo.html",
+    "modulo": "sueldo_recibo",
+    "output": "pdf",
+    "callbackUrl": "tu_url",
+    "landscape": true,
+    "criterio_orden": "0",
+    "merge": true,
+    "requestContext": { "routeKey": "sendRequest" }
+  },
+  "employer": {
+    "Cuit": "30743844418",
+    "Name": "USINA Digital",
+    "Data": "Datos como el CP y el domicilio"
+  },
+  "employee": [
+    {
+      "EmployeeCuil": "0438761281",
+      "NameLastName": "MURSELI, AGUSTIN",
+      "AdmissionDate": "2023-09-10",
+      "TaskPerformed": "Desarrollo",
+      "FileNumber": "107752",
+      "Agreement": {
+        "Code": "(Codigo de convenio)",
+        "Description": "(Descripción de convenio)"
+      },
+      "Descriptors": {
+        "Branch": {
+          "Code": "(Codigo de rama)",
+          "Description": "(Descripción de rama)"
+        },
+        "Grouping": {
+          "Code": "(Codigo de agrupamiento)",
+          "Description": "(Descripción de agrupamiento)"
+        },
+        "Job": {
+          "Code": "(Codigo de puesto)",
+          "Description": "(Descripción de puesto)"
+        },
+        "Age": {
+          "Code": "(Codigo de edad)",
+          "Description": "(Descripción de edad)"
+        },
+        "WorkingDay": {
+          "Code": "(Codigo de jornada)",
+          "Description": "(Descripción de jornada)"
+        },
+        "Area": {
+          "Code": "(Codigo de zona)",
+          "Description": "(Descripción de zona)"
+        }
+      },
+      "WorkAddress": {
+        "Name": "(Nombre de la sucursal)",
+        "Address": "Dirección completa, Calle nro, piso/depto, localidad, provincia"
+      },
+      "WorkArea": {
+        "Code": "(Codigo de zona)",
+        "Name": "(Nombre del código de zona)"
+      },
+      "SettlementMethod": "2",
+      "SettlementDate": "2024-03-06",
+      "SocialWork": "Obra Social",
+      "ProfessionalCategory": "AYUDANTE",
+      "AssignedRemuneration": "(Remuneración Asignada)",
+      "DateLastDepositContributions": "2023-10",
+      "PeriodLastDepositContributions": "2023-09",
+      "TotalAmountContributions": "(Monto total de contribuciones)",
+      "TotalBasicRemuneration": "65929.50",
+      "BasicRemunerationMode": "(Si Modalidad de la liquidación del legajo es = Mes, se envía Valor mensual, SINO Valor hora)",
+      "PlacePayment": "CABA",
+      "PaymentDate": "2023-10-31",
+      "PaymentWay": "(Forma de pago)",
+      "DepositBank": "VEP",
+      "DepositAccountCBU": "(CBU de depósito)",
+      "PrintedObservations": "(Observaciones Impresas del recibo)",
+      "Concepts": [
+        {
+          "Code": "2",
+          "Description": "Horas Normales",
+          "Type": "RemunerativeConcepts",
+          "Amount": "90",
+          "Parameter": "cantidad",
+          "Value": "81900.00"
+        },
+        {
+          "Code": "201",
+          "Description": "Jubilación",
+          "Type": "DiscountConcepts",
+          "Amount": "11",
+          "Parameter": "%",
+          "Value": "9009.00"
+        },
+        {
+          "Code": "202",
+          "Description": "Ley 19032",
+          "Type": "DiscountConcepts",
+          "Amount": "3",
+          "Parameter": "%",
+          "Value": "2457.00"
+        },
+        {
+          "Code": "203",
+          "Description": "Obra Social",
+          "Type": "DiscountConcepts",
+          "Amount": "3",
+          "Parameter": "%",
+          "Value": "2457.00"
+        },
+        {
+          "Code": "206",
+          "Description": "Sindicato",
+          "Type": "DiscountConcepts",
+          "Amount": "2.5",
+          "Parameter": "%",
+          "Value": "2047.50"
+        }
+      ],
+      "NetAmount": {
+        "Amount": "65929.00",
+        "Description": "Son pesos SESENTA Y CINCO MIL NOVECIENTOS VEINTINUEVE CON 50/100"
+      }
+    },
+    {
+      "EmployeeCuil": "20434052312",
+      "NameLastName": "FERNANDEZ, JULIO MATEO",
+      "AdmissionDate": "2023-09-10",
+      "TaskPerformed": "Desarrollador",
+      "FileNumber": "107252",
+      "Agreement": {
+        "Code": "(Codigo de convenio)",
+        "Description": "(Descripción de convenio)"
+      },
+      "Descriptors": {
+        "Branch": {
+          "Code": "(Codigo de rama)",
+          "Description": "(Descripción de rama)"
+        },
+        "Grouping": {
+          "Code": "(Codigo de agrupamiento)",
+          "Description": "(Descripción de agrupamiento)"
+        },
+        "Job": {
+          "Code": "(Codigo de puesto)",
+          "Description": "(Descripción de puesto)"
+        },
+        "Age": {
+          "Code": "(Codigo de edad)",
+          "Description": "(Descripción de edad)"
+        },
+        "WorkingDay": {
+          "Code": "(Codigo de jornada)",
+          "Description": "(Descripción de jornada)"
+        },
+        "Area": {
+          "Code": "(Codigo de zona)",
+          "Description": "(Descripción de zona)"
+        }
+      },
+      "WorkAddress": {
+        "Name": "(Nombre de la sucursal)",
+        "Address": "Dirección completa, Calle nro, piso/depto, localidad, provincia"
+      },
+      "WorkArea": {
+        "Code": "(Codigo de zona)",
+        "Name": "(Nombre del código de zona)"
+      },
+      "SettlementMethod": "2",
+      "SettlementDate": "2024-03-06",
+      "SocialWork": "Obra Social",
+      "ProfessionalCategory": "AYUDANTE",
+      "AssignedRemuneration": "(Remuneración Asignada)",
+      "DateLastDepositContributions": "2023-10",
+      "PeriodLastDepositContributions": "2023-09",
+      "TotalAmountContributions": "(Monto total de contribuciones)",
+      "TotalBasicRemuneration": "65929.50",
+      "BasicRemunerationMode": "(Si Modalidad de la liquidación del legajo es = Mes, se envía Valor mensual, SINO Valor hora)",
+      "PlacePayment": "CABA",
+      "PaymentDate": "2023-10-31",
+      "PaymentWay": "(Forma de pago)",
+      "DepositBank": "VEP",
+      "DepositAccountCBU": "(CBU de depósito)",
+      "PrintedObservations": "(Observaciones Impresas del recibo)",
+      "Concepts": [
+        {
+          "Code": "2",
+          "Description": "Horas Normales",
+          "Type": "RemunerativeConcepts",
+          "Amount": "90",
+          "Parameter": "cantidad",
+          "Value": "81900.00"
+        },
+        {
+          "Code": "201",
+          "Description": "Jubilación",
+          "Type": "DiscountConcepts",
+          "Amount": "11",
+          "Parameter": "%",
+          "Value": "9009.00"
+        },
+        {
+          "Code": "202",
+          "Description": "Ley 19032",
+          "Type": "DiscountConcepts",
+          "Amount": "3",
+          "Parameter": "%",
+          "Value": "2457.00"
+        },
+        {
+          "Code": "203",
+          "Description": "Obra Social",
+          "Type": "DiscountConcepts",
+          "Amount": "3",
+          "Parameter": "%",
+          "Value": "2457.00"
+        },
+        {
+          "Code": "206",
+          "Description": "Sindicato",
+          "Type": "DiscountConcepts",
+          "Amount": "2.5",
+          "Parameter": "%",
+          "Value": "2047.50"
+        }
+      ],
+      "NetAmount": {
+        "Amount": "65929.00",
+        "Description": "Son pesos SESENTA Y CINCO MIL NOVECIENTOS VEINTINUEVE CON 50/100"
+      }
+    }
+  ]
 }
+
 
 ```
 
